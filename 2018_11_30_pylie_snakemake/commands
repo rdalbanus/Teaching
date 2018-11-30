@@ -10,5 +10,8 @@ for i in {1..20}; do echo "this is feature ${i}" \
 # Make DAG
 snakemake --dag -F | dot -Tsvg > dag.svg
 
-# Run snakemake
+# Run snakemake (dry run)
 snakemake -npr
+
+# Run snakemake
+snakemake -pr
